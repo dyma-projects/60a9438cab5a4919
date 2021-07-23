@@ -1,0 +1,5 @@
+
+<div [style.backgroundColor]="countClick > 2 ? 'red' : 'blue'">
+    <p>Cliquez sur le bouton! (quelque chose se passera peut-être si vous persévérez)</p>
+    <button type="button"  [disabled]="countClick > 2" (click)="countClick=countClick + 1">cliquez encore {{ 3 - countClick }} fois!</button>
+</div>
